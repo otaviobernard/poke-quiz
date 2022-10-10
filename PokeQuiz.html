@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEX</title>
+    <link rel="stylesheet" href="pokequiz.css">
+    <script src="pokequiz.js"></script>
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+</head>
+
+<body>
+    <div id="principal">
+        <div id="pokedextitle">
+            <p>PokeQuiz</p>
+        </div>
+        <div id="comboBoxHere">
+            <label for="combo">Escolha uma região:</label>
+            <select id="combo">
+                    <option value="Kanto" selected>Kanto</option>
+                    <option value="Johto">Johto</option>
+                    <option value="Hoenn">Hoenn</option>
+                    <option value="Sinnoh">Sinnoh</option>
+                    <option value="Unova">Unova</option>
+                    <option value="Kalos">Kalos</option>
+                    <option value="Alola">Alola</option>
+                    <option value="Galar">Galar</option>
+                </select>
+            <button onclick="pokeFilter()">Show</button>
+            <div id="searchlabel">
+                <label for="searchinput">Digite o nome do pokemon:</label>
+                <input id="searchinput" type="text">
+                <button onclick="unrenderPoke()">Chutar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pokedex">
+        <ul data-js="pokedex" class="pokedex">
+        </ul>
+    </div>
+
+</body>
+
+</html>
